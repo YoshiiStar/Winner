@@ -1,0 +1,97 @@
+#modal-version-web.modal {
+  z-index: 99999999;
+}
+
+#modal-version-web .modal-backdrop {
+  z-index: 9999999 !important;
+}
+
+#modal-version-web .modal-content {
+  background-image: url('/Content/images/estilo-2021/modal-version/fondo-modal.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+#modal-version-web .cerrar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -20px;
+  margin-top: -20px;
+}
+
+#modal-version-web .close {
+  opacity: 1;
+}
+
+  #modal-version-web .close:hover {
+    opacity: .5;
+  }
+
+#modal-version-web .logo-modal {
+  position: absolute;
+  width: 100%;
+  max-width: 130px;
+  right: 0px;
+  bottom: 0px;
+  margin-right: -43px;
+  margin-bottom: -40px;
+}
+
+#modal-version-web .texto--modal h3 {
+  font-size: 3.4rem;
+  color: #fff;
+}
+
+#modal-version-web .texto--interior__modal {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 2rem 2rem;
+  max-width: 480px;
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+#modal-version-web .linea--modal {
+  background: #ffa400;
+  width: 100px;
+  height: 6px;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+#modal-version-web .texto--link__modal {
+  padding: 0rem 2rem 1rem 2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  max-width: 380px;
+  margin: auto;
+  display: block;
+  clear: both;
+  text-transform: uppercase;
+}
+
+  #modal-version-web .texto--link__modal a {
+    text-decoration: underline;
+  }
+
+@media (min-width: 768px) {
+  #modal-version-web .modal-content {
+    padding: 5rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  #modal-version-web .logo-modal {
+    max-width: 205px;
+    margin-right: -73px;
+    margin-bottom: -70px;
+  }
+}

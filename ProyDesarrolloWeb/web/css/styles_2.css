@@ -1,0 +1,87 @@
+.flotante {
+    background: #fff;
+    position: fixed;
+    right: 0px;
+    top: 50vh;
+    margin-top: -200px;
+    z-index: 88888888;
+    cursor: pointer;
+}
+
+.linea--flotante {
+    background: var(--rojo);
+    height: 25px;
+    width: 100%;
+}
+
+.content--flotante {
+    background: #fff;
+    position: relative;
+    z-index: 88889;
+}
+
+.txt--flotante {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 230px;
+    float: left;
+    margin-left: 230px;
+    background: #fff;
+    padding: 16px 1rem;
+    transition: all 0.4s;
+}
+
+    .txt--flotante.activo {
+        margin-left: -230px;
+    }
+
+    .txt--flotante a {
+        font-size: 1rem;
+    }
+
+.manito {
+    margin-bottom: -1rem;
+    max-width: 4rem;
+}
+
+body .txt--flotante a.cuentanos {
+    line-height: 5px !important;
+}
+
+.cuentanos {
+    color: #7a39e0;
+    /*font-size: 1rem;*/
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.antiguo {
+    color: #ff6a14;
+    /*font-size: 1rem;*/
+    line-height: 5px !important;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .manito {
+        max-width: calc(32px + 2vw);
+    }
+
+    .linea--flotante {
+        height: 35px;
+    }
+
+    .txt--flotante a {
+        font-size: 1rem
+    }
+}
+
+@media (min-width: 1921px) {
+    .manito {
+        max-width: calc(16px + 2vw);
+    }
+}

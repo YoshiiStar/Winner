@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="recursos/images/IconoWeb.png" />
+
+        <title>PassHub</title>
+        <meta name="description" content="Encuentra entradas para los mejores eventos en Per&#250; en Teleticket: conciertos, eventos deportivos, festivales, espect&#225;culos teatrales y mucho m&#225;s.">
+        <meta name="keywords" content="Teleticket, entradas, tickets, festival, Lima, entradas estadio, teatro" />
+        <meta property="fb:app_id" content="185751294773934" />
+        <meta property="og:type" content="website" />
+
+
+        <meta property="og:title" content="Teleticket.com.pe - Tu entrada a las mejores experiencias" />
+        <meta property="og:url" content="https://tlk-compra.azurewebsites.net/" />
+
+        <meta property="og:image" content="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/categorias/1-generica.png" />
+        <meta property="og:description" content="Encuentra entradas para los mejores eventos en Per&#250; en Teleticket: conciertos, eventos deportivos, festivales, espect&#225;culos teatrales y mucho m&#225;s." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@teleticketperu" />
+        <meta name="twitter:creator" content="@teleticketperu" />
+        <meta name="twitter:domain" content="www.teleticket.com.pe" />
+
+        <meta name="twitter:title" content="Teleticket.com.pe - Tu entrada a las mejores experiencias" />
+        <meta name="twitter:description" content="Encuentra entradas para los mejores eventos en Per&#250; en Teleticket: conciertos, eventos deportivos, festivales, espect&#225;culos teatrales y mucho m&#225;s." />
+        <meta name="twitter:image" content="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/categorias/1-generica.png" />
+        <meta name="google-site-verification" content="wdoyTY41EmGZxuYc-AW5fcE7Si406XPxvjeLxGeciFk" />
+
+
+
+
+        <link rel="canonical" href="#" />
+        <!-- Global site tag (gtag.js) - Google Ads: 794421442 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-794421442"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'AW-794421442');
+        </script>
+
+        <script>   var dataLayer = window.dataLayer = window.dataLayer || [];</script>  <!-- Google Tag Manager -->  <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MZ7NPMW');</script>  <!-- End Google Tag Manager -->
+        <link rel="stylesheet" href="https://cdnp.teleticket.com.pe/Content/css/estilo-2021/bootstrap.css?v=20240131" />
+
+        <link rel="stylesheet" href="https://cdnp.teleticket.com.pe/Content/css/estilo-2021/main.css?v=20240404">
+        <link rel="stylesheet" href="https://cdnp.teleticket.com.pe/Content/css/estilo-2021/home.css?v=20240131">
+        <link rel="stylesheet" href="https://cdn.teleticket.com.pe/assets/owl-carousel/2.3.4/css/owl.min.css">
+        <style>
+            body {
+                font-size: 16px !important;
+            }
+        </style>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles_1.css">
+        <link rel="stylesheet" href="css/styles_2.css">
+        <link rel="stylesheet" href="css/styles_3.css">
+        <link rel="stylesheet" href="css/styles_4.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap">
+        <!-- Load Vue followed by BootstrapVue -->
+        <script src="https://cdn.teleticket.com.pe/assets/vue/2.6.14/vue.min.js?v=20240402v1"></script>
+        <script src="https://cdn.teleticket.com.pe/assets/bootstrap/bootstrap-vue/2.21.2/bootstrap-vue.min.js?v=20240402v1"></script>
+        <!-- JS no async -->
+        <script src="https://cdn.teleticket.com.pe/assets/jquery/2.1.1/jquery.min.js"></script>
+        <!--Axios-->
+        <script src="https://static.puntoticket.com/assets/axios/0.24.0/axios.min.js"></script>
+
+        <script type='application/ld+json'>
+            {
+            "@context":"http://schema.org",
+            "@type":"WebSite",
+            "url":"https://teleticket.com.pe/",
+            "name":"Teleticket",
+            "alternateName":"Teleticket"
+            }
+        </script>
+        <script type='application/ld+json'>
+            {
+            "@context":"http://schema.org",
+            "@type":"Organization",
+            "name":"Punto Ticket",
+            "alternateName":"Puntoticket",
+            "url":"https://teleticket.com.pe/",
+            "logo":"https://cdn.teleticket.com.pe/images/logo-teleticket.png",
+            "sameAs":
+            ["https://www.facebook.com/puntoticket",
+            "https://es.wikipedia.org/wiki/Puntoticket",
+            "https://www.instagram.com/puntoticket/",
+            "https://www.linkedin.com/company/punto-ticket-s.a.",
+            "https://plus.google.com/+puntoticket",
+            "https://www.youtube.com/user/PuntoTicket",
+            "https://twitter.com/puntoticket"],
+            "contactPoint" : [ {
+            "@type" : "ContactPoint",
+            "telephone" : "+56-2-2938-2355",
+            "contactType" : "Customer Service",
+            "areaServed":"PE",
+            "availableLanguage" : ["Spanish"] } ]
+            }
+        </script>
+
+        <script type='text/javascript'>
+            var appInsights = window.appInsights || function (config)
+            {
+                function r(config) {
+                    t[config] = function () {
+                        var i = arguments; t.queue.push(function () {
+                            t[config].apply(t, i)
+                        })
+                    }
+                }
+                var t = {config: config}, u = document, e = window, o = 'script', s = u.createElement(o), i, f;
+                for (s.src = config.url || '//az416426.vo.msecnd.net/scripts/a/ai.0.js', u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Ajax']; i.length; )
+                    r('track' + i.pop());
+                return r('setAuthenticatedUserContext'), r('clearAuthenticatedUserContext'), config.disableExceptionTracking || (i = 'onerror', r('_' + i), f = e[i], e[i] = function (config, r, u, e, o) {
+                    var s = f && f(config, r, u, e, o);
+                    return s !== !0 && t['_' + i](config, r, u, e, o), s
+                }), t
+            }({
+                instrumentationKey: "b0884441-fb90-40a6-b458-659a9b51943c"
+            });
+            window.appInsights = appInsights;
+            appInsights.trackPageView();
+        </script>
+    </head>
+    <body>
+
+        <!-- Google Tag Manager (noscript) -->  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ7NPMW"  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>  <!-- End Google Tag Manager (noscript) -->
+
+        
+        <div class="menu-side">
+            <div class="overlay--menu"></div>
+            <!-- MOVIL -->
+            <div class="content-menu-movil d-block d-md-none d-lg-none menu-cuenta">
+                <div class="logeado">
+                    <div id="accordionB">
+                        <div class="categoria--mov">
+                            <div class="card-header" id="headingTwo">
+                                <span data-toggle="collapse" data-target="#cuenta-mov" aria-expanded="true" aria-controls="cuenta-mov">
+                                    &nbsp;<i class="fas fa-chevron-down"></i>&nbsp;&nbsp;Bienvenido
+                                </span>
+                            </div>
+                            <div id="cuenta-mov" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div id="menu-home" class="d-flex flex-column">
+                                        <a class="link-categoria text-uppercase" href="#" data-value="1" data-ga-tracking="event, Homepage, Click, SubMenuMusica-ClienteID:0">
+                                            MIS COMPRAS
+                                        </a>
+                                        <a class="link-categoria text-uppercase" href="#" data-value="2" data-ga-tracking="event, Homepage, Click, SubMenuDeportes-ClienteID:0">
+                                            E-TICKETS
+                                        </a>
+                                        <a class="link-categoria text-uppercase" href="#" data-ga-tracking="event, Homepage, Click, SubMenuDeportes-ClienteID:0">
+                                            Mis Devoluciones
+                                        </a>
+                                        <a class="link-categoria text-uppercase" href="#" data-value="2" data-ga-tracking="event, Homepage, Click, SubMenuDeportes-ClienteID:0">
+                                            Cambiar Contrase&#241;a
+                                        </a>
+                                        <a class="link-categoria text-uppercase" href="#" data-value="3" data-ga-tracking="event, Homepage, Click, SubMenuTeatro-ClienteID:0">
+                                            CERRAR SESIÓN
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  INGRESO MOVIL -->
+                <div class="puntos-venta__movil visita" style="display: none">
+                    <div class="d-flex ingreso--movil">
+                        <a class="" href="#" target="_self">
+                            <i class="fa fa-user"></i>&nbsp;Ingresa
+                        </a>
+                    </div>
+                </div>
+                <!--  FIN INGRESO MOVIL -->
+                <!--  REGISTRO MOVIL -->
+                <div class="puntos-venta__movil visita" style="display: none">
+                    <div class="card-header d-flex ingreso--movil">
+                        <a class="" href="#" target="_self">
+                            <i class="log-in">
+                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/log-in.svg" alt="Registrate">
+                            </i>&nbsp;Regístrate
+                        </a>
+                    </div>
+                </div>
+                <!--  MENU MOVIL -->
+                <div id="accordion" class="accordion">
+                    <div class="categoria--mov">
+                        <div class="card-header" id="headingOne">
+    <span data-toggle="collapse" data-target="#cat-mov" aria-expanded="true" aria-controls="cat-mov" style="color: #000;">
+        &nbsp;<i class="fas fa-chevron-down"></i>&nbsp;&nbsp;categorías
+    </span>
+</div>
+
+                        <div id="cat-mov" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div id="menu-home" class="d-flex flex-column">
+                                    <a class="link-categoria" href="#" data-ga-tracking="event, Homepage, Click, SubMenuMusica-ClienteID:0">Conciertos</a>
+                                    <a class="link-categoria" href="#" data-ga-tracking="event, Homepage, Click, SubMenuDeportes-ClienteID:0">Deportes</a>
+                                    <a class="link-categoria" href="#" data-ga-tracking="event, Homepage, Click, SubMenuFamilia-ClienteID:0">Entretenimiento</a>
+                                    <a class="link-categoria" href="#" data-ga-tracking="event, Homepage, Click, SubMenuEspeciales-ClienteID:0">Todos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  MENU MOVIL-->
+                <!-- BOTON CERRAR -->
+                <div class="cerrar" id="cerrar-mov">
+                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/close.svg" alt="cerrar">
+                </div>
+                <!-- BOTON CERRAR-->
+            </div>
+            <!-- FIN MOVIL -->
+            <!--  DESKTOP -->
+            <div class="container">
+                <div class="nav-category navbar-collapse d-none d-sm-none d-md-block d-lg-block">
+                    <div id="menu-home" class="d-flex">
+                        <a class="link-categoria" href="#" data-ga-tracking="event, Homepage, Click, SubMenuMusica-ClienteID:0">Conciertos</a>
+                        <a class="link-categoria" href="#" data-ga-tracking="event, Homepage, Click, SubMenuDeportes-ClienteID:0">Deportes</a>
+                        <a class="link-categoria" href="#" data-ga-tracking="event, Homepage, Click, SubMenuFamilia-ClienteID:0">Entretenimiento</a>
+                        <a class="link-categoria" href="#" data-ga-tracking="event, Homepage, Click, SubMenuEspeciales-ClienteID:0">Todos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  DESKTOP -->
+        <!-- header  2021 -->
+        <header class="menu" role="navigation" style="background-color: #2d2d2d; color: #2d2d2d;">
+
+            <div id="banner" style="width: 100%"></div>
+
+            <div class="container">
+                <div class="row align-item-center justify-content-between">
+
+                    <div class="col-8 col-sm-3 col-md-3 col-lg-2 col-xl-auto">
+                        <div class="">
+                            <a href="#">
+                                <img src="recursos/images/LogoWeb.png" alt="PassHub" class="logo" />
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-4 col-sm-auto col-md-1 col-lg-2 col-xl-2">
+    <div class="d-flex cat--button flex-row align-item-center justify-content-center" style="color: #fff;">
+        <div class="d-lg-none d-block d-md-none">
+            <div class="menu-container ico-menu__movil">
+                <label for="menu"></label>
+                <input type="checkbox" id="menu" />
+                <div role='navigation' class="navi-mov" style="color: #fff;"></div>
+            </div>
+        </div>
+        <div class="d-none d-sm-none d-md-block d-lg-block">
+            <div class="menu-container">
+                <label for="menudesk"></label>
+                <input type="checkbox" id="menudesk" />
+                <div role='navigation' class="navi" style="color: #fff;"></div>
+            </div>
+        </div>
+        <div class="d-none d-lg-block">
+            <span style="color: #fff;">Categorías</span>
+        </div>
+    </div>
+</div>
+
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 custom-search-form" id="search-form-wrapper">
+                        <div class="input-group">
+                            <input type="text" class="form-control search-form-wrapper" placeholder="Busca tu evento" id="search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <span class="icon icon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-4 col-xl-3 login">
+                        <div class="d-flex flex-direction-row justify-content-md-end menu-cuenta">
+                            <!--  VISITA  -->
+                            <div class="visita" style="display: none">
+                                <a class="menu-item-fixed-height" href="#"
+                                   target="_self" style="color: #fff !important;">
+                                    <i class="fa fa-user user-ico"></i>&nbsp;Ingresa
+                                </a>
+                            </div>
+                            <div class="visita" style="display: none">
+                                <a class="menu-item-fixed-height" href="#"
+                                   target="_self" style="color: #fff !important;">Regístrate</a>
+                            </div>
+
+                            <!--  VISITA  -->
+                            <div class="parent logeado" style="display: none">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <div class="name--user">Hola <span class="nombre-cliente text-capitalize"></span></div>
+                                            <div class="cuenta--ticket">
+                                                Compras & e-Tickets<i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li class="logeado">
+                                                <a href="#"
+                                                   target="_self">
+                                                    Mis Compras
+                                                </a>
+                                            </li>
+                                            <li class="logeado">
+                                                <a href="#"
+                                                   target="_self">e-Tickets</a>
+                                            </li>
+                                            <li class="logeado">
+                                                <a href="#"
+                                                   target="_self">
+                                                    Mis Devoluciones
+                                                </a>
+                                            </li>
+                                            <li class="logeado">
+                                                <a href="#"
+                                                   target="_self">Cambiar Contrase&#241;a</a>
+                                            </li>
+                                            <li class="logeado">
+                                                <a href="#"
+                                                   target="_self">
+                                                    Cerrar sesión
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- header  2021 -->
+        <div id="body-content">
+
+
+
+
+
+
+
+            <div class="cuerpo_slide">
+                <div class="owl-carousel owl-loaded">
+
+<div class="item item-slide loading-slide" style="background-image: url('recursos/images/LogoWeb.png'); background-size: cover; background-position: center">
+                        <div class="container">
+                            <div class="margen-slide"></div>
+                            <div class="contenedor--interior-slide"></div>
+                        </div>
+                    </div>
+
+                    <div class="item item-slide d-none ARP018-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/arp018_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/arp018_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="SHREK, EL MUSICAL OFICIAL - GIRA 2024">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">Teatro</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                SHREK, EL MUSICAL OFICIAL - GIRA 2024
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                31 de octubre 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="ARP018">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none CAA024-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/caa024_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/caa024_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="DIOS ES PERUANO CON CARLOS ALVAREZ">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">Familia</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                DIOS ES PERUANO CON CARLOS ALVAREZ
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                30 de agosto 2024 al 15 de setiembre 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="CAA024">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none DEA051-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/dea051_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/dea051_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="DANIELA DARCOURT ``CANTO DE MUJER``">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                DANIELA DARCOURT ``CANTO DE MUJER``
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                26 de octubre 2024 al 27 de octubre 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="DEA051">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none EUR003-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/eur003_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/eur003_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="DJ * BOBO EVOLUT3ON TOUR 2024">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                DJ * BOBO EVOLUT3ON TOUR 2024
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                31 de agosto 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="EUR003">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none FPA001-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/fpa001v2_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/fpa001v2_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="WORLD ATHLETICS U20 CHAMPIONSHIPS LIMA24">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">Deportes</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                WORLD ATHLETICS U20 CHAMPIONSHIPS LIMA24
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                28 de agosto 2024 al 31 de agosto 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="FPA001">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none GRO011-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/gro011_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/gro011_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="NIALL HORAN EN LIMA">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                NIALL HORAN EN LIMA
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                06 de octubre 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="GRO011">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none GRO018-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/gro018v2_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/gro018v2_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="INCUBUS EN LIMA - Performing MORNING VIEW In Its Entirety&#160;+&#160;The&#160;Hits">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                INCUBUS EN LIMA - Performing MORNING VIEW In Its Entirety&#160;+&#160;The&#160;Hits
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                12 de abril 2025
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="GRO018">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none IJE001-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/ije001_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/ije001_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="REGGAETON LIMA FESTIVAL 5 EDICION HALLOWEEN">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                REGGAETON LIMA FESTIVAL 5 EDICION HALLOWEEN
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                31 de octubre 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="IJE001">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none KIY029-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/kiy029_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/kiy029_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="ALEJANDRA GUZMAN BRILLA TOURS PERU">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                ALEJANDRA GUZMAN BRILLA TOURS PERU
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                28 de noviembre 2024 al 30 de noviembre 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="KIY029">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none KIY030-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/kiy030_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/kiy030_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="CULTURA PROFETICA - X+ TOUR">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                CULTURA PROFETICA - X+ TOUR
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                09 de noviembre 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="KIY030">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none PGM018-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/pgm018_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/pgm018_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="LIBIDO - LA REUNI&#211;N AREQUIPA">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                LIBIDO - LA REUNI&#211;N AREQUIPA
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                31 de agosto 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="PGM018">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none RBL007-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/rbl007_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/rbl007_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="CIRCO DE KARINA Y TIMOTEO - &#161;CAPTURADOS EN EL JARD&#205;N!">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">Familia</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                CIRCO DE KARINA Y TIMOTEO - &#161;CAPTURADOS EN EL JARD&#205;N!
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                29 de agosto 2024 al 01 de setiembre 2024
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="RBL007">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none TRO031-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/tro031_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/tro031_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="EDDY HERRERA EN EL CIRCULO MILITAR">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                EDDY HERRERA EN EL CIRCULO MILITAR
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                07 de setiembre 2024
+                                            </div>
+                                        </div>
+                                        <a href="#"class="btn--slider" data-eventID="TRO031">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-slide d-none TRO033-item-slide" style="background-image: url('https://cdn.teleticket.com.pe/images/eventos/banners2/tro033v2_lg_1_2_banner.jpg'); background-size: cover; background-position: center">
+                        <div class="gradiante--slider"></div>
+                        <div class="container">
+                            <div class="margen-slide">
+                                <div class="contenedor--interior-slide">
+                                    <div class="d-flex flex-column info--slider">
+
+                                        <img src="https://cdn.teleticket.com.pe/images/eventos/banners2/tro033v2_1_2_logo.png"
+                                             alt="logo slide"
+                                             class="logo-slide"
+                                             title="UNA NOCHE DE SALSA 13">
+
+                                        <div class="categoria--slider d-none d-md-block">
+                                            <div class="d-flex align-item-center slider--info__int">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" class="ico--ticket" alt="icono ticket">
+                                                <span class="slider--category">M&#250;sica</span>
+                                                <span class="slider--type">/ Presencial</span>
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                UNA NOCHE DE SALSA 13
+                                            </div>
+                                            <div class="slider--decription  d-none d-md-block">
+                                                29 de marzo 2025
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn--slider" data-eventID="TRO033">
+                                            VER MÁS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="seccion-listado-eventos" class="container section">
+
+
+
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 col-12 eventos order-2 order-md-1 order-lg-1">
+                        <div class="row articles">
+                            <div class="eventos-activos__section col-12">
+                                <div class="row listado--eventos" id="listado-eventos-filterizr">
+                                    <article class="filtr-item event-item col-6" id="event_0" data-groups='["2", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:KIY030-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/kiy030_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>Anfiteatro Del Parque De La Exposici&#243;n - LIMA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="CULTURA PROFETICA - X+ TOUR ">
+                                                        CULTURA PROFETICA - X+ TOUR 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        09 de noviembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_1" data-groups='["2", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:IJE001-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/ije001_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>Estadio Nacional - LIMA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="REGGAETON LIMA FESTIVAL 5 EDICION HALLOWEEN ">
+                                                        REGGAETON LIMA FESTIVAL 5 EDICION HALLOWEEN 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        31 de octubre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_2" data-groups='["2", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:TRO033-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/tro033v2_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>Estadio Nacional - LIMA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="UNA NOCHE DE SALSA 13 ">
+                                                        UNA NOCHE DE SALSA 13 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        29 de marzo 2025
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_3" data-groups='["2", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:GRO018-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/gro018_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="INCUBUS EN LIMA - Performing MORNING VIEW In Its Entirety + The Hits">
+                                                        INCUBUS EN LIMA - Performing MORNING VIEW In Its Entirety + The Hits
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        12 de abril 2025
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_4" data-groups='["5", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:FPA001-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/fpa001_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>ESTADIO ATL&#201;TICO DE LA VIDENA - SAN LUIS - LIMA</strong> / Deportes
+                                                    </p>
+                                                    <h3 title="WORLD ATHLETICS U20 CHAMPIONSHIPS LIMA24 ">
+                                                        WORLD ATHLETICS U20 CHAMPIONSHIPS LIMA24 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        28 de agosto 2024 - 31 de agosto 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_5" data-groups='["2", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:ORB049-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/orb049v2_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>C.C. ARENA BAR - BARRANCO - LIMA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="SALSA FEST - C.C. ARENA ">
+                                                        SALSA FEST - C.C. ARENA 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        30 de agosto 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_6" data-groups='["2", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:VTS005-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/vts005_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>PARADISO LIMA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="VASTION PRES. MACEO PLEX ">
+                                                        VASTION PRES. MACEO PLEX 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        11 de octubre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    
+                                    <article class="filtr-item event-item col-6" id="event_21" data-groups='["2", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:VEL001-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/vel001v2_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="AURORA ">
+                                                        AURORA 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        08 de noviembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_22" data-groups='["404", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:CON016-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/con016v2_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>ANFITEATRO COSTA DUOMO - MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA</strong> / Humor
+                                                    </p>
+                                                    <h3 title="MARKO: EL PODER DE UN CHISME ">
+                                                        MARKO: EL PODER DE UN CHISME 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        23 de noviembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_23" data-groups='["4", "70001"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:OYS138-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/oys138_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>TEATRO CANOUT - MIRAFLORES - LIMA</strong> / Familia
+                                                    </p>
+                                                    <h3 title="SOCORRO!!! VIVO CON UN ADOLESCENTE ">
+                                                        SOCORRO!!! VIVO CON UN ADOLESCENTE 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        31 de agosto 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_24" data-groups='["4", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:OYS126-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/oys126_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>AUDITORIO DE LA UNIVERSIDAD NACIONAL DEL SANTA - CHIMBOTE - SANTA</strong> / Familia
+                                                    </p>
+                                                    <h3 title="S.O.S MI ADOLESCENTE SE ENAMORÓ - CARLOS GALDÓS - CHIMBOTE ">
+                                                        S.O.S MI ADOLESCENTE SE ENAMORÓ - CARLOS GALDÓS - CHIMBOTE 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        24 de noviembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_25" data-groups='["937", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:JUM003-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/jum003_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>JOCKEY PLAZA - SANTIAGO DE SURCO - LIMA</strong> / Entretenci&#243;n
+                                                    </p>
+                                                    <h3 title="FLYING SQUIRREL 2024 - JOCKEY PLAZA ">
+                                                        FLYING SQUIRREL 2024 - JOCKEY PLAZA 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        28 de agosto 2024 - 31 de diciembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_26" data-groups='["9", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:BUK002-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/buk002_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>JOCKEY CLUB DEL PERU - PUERTA 3 - SANTIAGO DE SURCO - LIMA</strong> / Especiales
+                                                    </p>
+                                                    <h3 title="PEOPLE DAY BY BUK ">
+                                                        PEOPLE DAY BY BUK 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        17 de octubre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_27" data-groups='["2", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:PGM020-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/pgm020_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>ESTADIO MARISCAL CASTILLA - HUANCAYO</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="LIBIDO LA REUNIÓN - HUANCAYO ">
+                                                        LIBIDO LA REUNIÓN - HUANCAYO 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        28 de setiembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_28" data-groups='["937", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:MEV004-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/mev004_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>TEATRO MUNICIPAL DEL CUSCO </strong> / Entretenci&#243;n
+                                                    </p>
+                                                    <h3 title="EL AMOR ES MUCHO MAS QUE DECIR TE AMO CON DR. TOMAS ANGULO ">
+                                                        EL AMOR ES MUCHO MAS QUE DECIR TE AMO CON DR. TOMAS ANGULO 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        28 de setiembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_29" data-groups='["9", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:LXP020-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/lxp020_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>OFICINA LIKE XPLORER PERU  - PARACAS - PISCO</strong> / Especiales
+                                                    </p>
+                                                    <h3 title="EXCURSIÓN EN CUATRIMOTO A LA RESERVA NACIONAL DE PARACAS - + PLAYA ROJA + DESIERTO LUNAR">
+                                                        EXCURSIÓN EN CUATRIMOTO A LA RESERVA NACIONAL DE PARACAS - + PLAYA ROJA + DESIERTO LUNAR
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        29 de agosto 2024 - 31 de diciembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_30" data-groups='["3", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:NOH001-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/noh001_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>SALA ALZEDO-TEATRO SEGURA - LIMA</strong> / Teatro
+                                                    </p>
+                                                    <h3 title="TRES HISTORIAS DEL MAR ">
+                                                        TRES HISTORIAS DEL MAR 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        15 de octubre 2024 - 26 de noviembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_31" data-groups='["2", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:MGA015-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/mga015_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>LA ESTACI&#211;N DE BARRANCO - BARRANCO - LIMA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="TRIBUTO RICARDO MONTANER CON BANDA EN VIVO ">
+                                                        TRIBUTO RICARDO MONTANER CON BANDA EN VIVO 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        14 de setiembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_32" data-groups='["2", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:ZVP056-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/zvp056_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>ALAMO DISCO PE&#209;A - ICA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="SAMAME / CERATI - ETERNO A 10 AÑOS DE TU PARTIDA - ICA ">
+                                                        SAMAME / CERATI - ETERNO A 10 AÑOS DE TU PARTIDA - ICA 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        14 de setiembre 2024
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="filtr-item event-item col-6" id="event_33" data-groups='["2", "70002"]'>
+                                        <a href="#"
+                                           target="_self"
+                                           data-ga-tracking="event, ListadoEventosDestacados, Click, EventoID:BSS012-ClienteID:0">
+                                            <div class="aspect aspect--16x9">
+                                                <div class="aspect__inner">
+                                                    <img src="https://cdn.teleticket.com.pe/images/eventos/bss012_calugalistado.jpg"
+                                                         onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'"
+                                                         alt=""
+                                                         class="img--evento">
+                                                </div>
+                                            </div>
+                                            <div class="evento--box">
+                                                <div class="d-none d-md-block">
+                                                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png"
+                                                         alt="ticket"
+                                                         class="ico-ticket">
+                                                </div>
+                                                <div>
+                                                    <p class="descripcion text-truncate">
+                                                        <strong>MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA</strong> / M&#250;sica
+                                                    </p>
+                                                    <h3 title="AMOR BAJO LAS ESTRELLAS ">
+                                                        AMOR BAJO LAS ESTRELLAS 
+                                                    </h3>
+                                                    <p class="fecha text-truncate">
+                                                        14 de febrero 2025
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PAGINADOR -->
+                        <nav class="mx-auto paginador">
+                            <ul class="pagination pagination-lg">
+                                <li class="page-item active">
+                                    <a class="page-link" data-page="1" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" data-page="2" href="#">2</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- PAGINADOR -->
+                    </div>
+
+                    <aside class="col-md-3 col-sm-12 col-12 order-1 order-md-2 order-lg-2 sidebar" id="sidebar">
+                        <div class="aside-position">
+                            <h1 class="d-none d-md-block">Destacados</h1>
+
+                            <!-- movil -->
+                            <div class="owl-carousel destacados d-block d-sm-block d-md-none d-lg-none">
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://cdn.teleticket.com.pe/images/calugas/tes045_caluga.jpg" class="img-fluid img--caluga-movil" alt="Temporada de Circos 2024">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://cdn.teleticket.com.pe/images/calugas/costa21_caluga_2_20231019_1.jpg" class="img-fluid img--caluga-movil" alt="MultiespacioCosta21">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://cdn.teleticket.com.pe/images/calugas/GTN_calugacaluga20230926.jpg" class="img-fluid img--caluga-movil" alt="GranTeatroNacional">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://cdn.teleticket.com.pe/images/calugas/caluga_est_2024.png" class="img-fluid img--caluga-movil" alt="Estacionamientos">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- desktop -->
+                            <div class="d-none d-sm-none d-md-block d-lg-block">
+                                <div class="item--desktop">
+                                    <figure class="effect-lexi">
+                                        <img src="https://cdn.teleticket.com.pe/images/calugas/tes045_caluga.jpg" class="img-fluid" alt="Temporada de Circos 2024">
+                                        <figcaption>
+                                            <a href="#">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/right.svg" alt="derecha">
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="item--desktop">
+                                    <figure class="effect-lexi">
+                                        <img src="https://cdn.teleticket.com.pe/images/calugas/costa21_caluga_2_20231019_1.jpg" class="img-fluid" alt="MultiespacioCosta21">
+                                        <figcaption>
+                                            <a href="#">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/right.svg" alt="derecha">
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="item--desktop">
+                                    <figure class="effect-lexi">
+                                        <img src="https://cdn.teleticket.com.pe/images/calugas/GTN_calugacaluga20230926.jpg" class="img-fluid" alt="GranTeatroNacional">
+                                        <figcaption>
+                                            <a href="#">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/right.svg" alt="derecha">
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="item--desktop">
+                                    <figure class="effect-lexi">
+                                        <img src="https://cdn.teleticket.com.pe/images/calugas/caluga_est_2024.png" class="img-fluid" alt="Estacionamientos">
+                                        <figcaption>
+                                            <a href="#">
+                                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/right.svg" alt="derecha">
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block d-lg-block">
+
+
+
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+        <div class="cookie-disclaimer" style="display: none;">
+            <div class="row align-items-center justify-content-center justify-content-md-start">
+                <div class="col-auto">
+                    <h3 class="cookie-disclaimer__titulo">Nuestro sitio web utiliza cookies.</h3>
+                    <p class="cookie-disclaimer__mensaje">
+                        Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico.
+                        Además, compartimos información sobre el uso que haga el sitio web con nuestros partners de redes sociales, publicidad y análisis web,
+                        quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya  hecho de sus servicios.
+                    </p>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <button class="cookie-disclaimer__btn">Aceptar</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer id="footer" class="">
+
+            <div class="container" role="contentinfo">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-7">
+                        <div class="row">
+
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <img src="recursos/images/LogoWeb.png"
+                                     alt="logo punto ticket footer"
+                                     class="logo--footer float-left d-none d-md-block">
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-3 offset-md-1">
+                                <h5 class="titulo--footer">NOSOTROS</h5>
+                                <ul class="link--ball">
+                                    <li>
+                                        <a href="#">Acerca de nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Términos y condiciones</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Política de cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Política de privacidad</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <h5 class="titulo--footer">ENLACES RÁPIDOS</h5>
+                                <ul class="link--ball mb-20">
+                                    <li>
+                                        <a href="#">Eventos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="#">Contáctanos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line--foote"></div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-5">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-8 col-xl-6">
+                                <h5 class="titulo--footer d-none d-md-block">CONTÁCTANOS</h5>
+                                <div class="flex-social justify-content-between">
+                                    <a href="#">
+                                        <img class="ico-footer" src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/facebook.svg" alt="icono">
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#">
+                                        <img class="ico-footer" src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/twitter-x.svg" alt="icono">
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                                <div class="flex-ayuda--footer">
+                                    <a href="#" class="centro-ayuda--footer text-uppercase">
+                                        TÉRMINOS Y CONDICIONES
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-4 col-xl-6 my-auto text-center">
+                                <a href="#">
+                                    <img src="https://cdn.teleticket.com.pe/images/footer/img_libro_de_reclamaciones.png" alt="Libro de reclamaciones" class="img-responsive">
+                                </a>
+                            </div>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line--foote_b"></div>
+
+        </footer>
+
+
+
+
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/jquery.bcSwipe/jquery.bcSwipe.min.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/jquery-slidebars/slidebars.min.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/jquery.autocomplete/1.2.2/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/jquery.screwdefaultbuttons/2.0.6/jquery.screwdefaultbuttons.min.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/jquery.readmore/readmore.min.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/jquery.placeholder/2.0.8/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/js/jquery.rut.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/js/jquery.form.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/underscore/1.8.3/underscore-min.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/bootstrap/4.6.0/js/popper.js"></script>
+        <script type="text/javascript" src="https://cdnp.teleticket.com.pe/Content/js/customValidators.js?v=20240531"></script>
+        <script type="text/javascript" src="https://cdnp.teleticket.com.pe/Content/js/estilo-2021/search.js?v=20240206"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/owl-carousel/2.3.4/js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="https://cdnp.teleticket.com.pe/Content/js/utils-1.10.js?v=20240402"></script>
+        <script type="text/javascript" src="https://cdnp.teleticket.com.pe/Content/js/estilo-2021/home.js?v=20221014"></script>
+        <script type="text/javascript" src="https://cdnp.teleticket.com.pe/Content/js/gaEventTracking.min.js?v=20170725"></script>
+        <script type="text/javascript" src="https://cdnp.teleticket.com.pe/Content/js/estilo-2021/cookie-disclaimer.js"></script>
+        <script type="text/javascript" src="https://cdnp.teleticket.com.pe/Content/js/estilo-2021/layout.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+
+
+
+        <script type="text/javascript">
+
+            $(function () {
+                try {
+                    if ($(window).width() <= 768) {
+                        $('.item.item-slide').each(function () {
+                            var backgroundImage = $(this).css('background-image')
+                            $(this).css('background-image', backgroundImage.replace('_lg_', '_sm_'));
+                        })
+                    }
+                } catch (e) {
+                    console.info('no se ha podido setear los banners en sm')
+                }
+
+                window.addEventListener('popstate', function (e) {
+                    window.location.assign(location.pathname);
+                });
+
+                function registrarCambioListado(ruta) {
+                    window.history.pushState(null, null, ruta);
+                }
+
+                function GetBanner() {
+                    $.ajax({
+                        url: '/Landing/GetBannerEspeciales',
+                        type: 'GET',
+                        success: function (result) {
+                            if (result != null) {
+                                $('#banner').append(result);
+                                if ($('#menu-side-container').length > 0 && $('#banner').length > 0 && $(document).width() >= 1024) {
+                                    $('#menu-side-container').css("top", "calc(" + $('#banner').css('height') + " - 47px)");
+                                }
+                            }
+                        },
+                        error: function () {
+                        }
+                    });
+                }
+                //Desactvado para Beta hasta que sea la version final. 
+                GetBanner();
+
+                function registrarAccionesListadoMeses() {
+                    //listado todos, con paginacion
+                    $("[id$=_btn_todos]").click(function (e) {
+                        e.preventDefault();
+                        var button = $(this);
+                        var idDivEvento = button.attr('id').replace('_btn_todos', '');
+                        if (button.hasClass("showLess")) {
+                            button.removeClass("showLess");
+                            button.children("a").text("Ver todos");
+                            $('html,body').animate({
+                                scrollTop: button.parent().parent().offset().top
+                            }, 'slow', function () {
+                                $('#' + idDivEvento + ' article:gt(7)').fadeOut();
+                            });
+                        } else {
+                            button.addClass("showLess");
+                            button.children("a").text("Ver 8 primeros");
+                            $('#' + idDivEvento + ' article:gt(7)').fadeIn();
+                        }
+                    });
+
+                    $("ul[id='paginas'] li a").click(function (e) {
+                        e.preventDefault();
+                        $("#paginas li").removeClass("active");
+                        $(this).parent().addClass("active");
+                        var nroPagina = $(this).attr('id').replace('pagina_', '');
+                        $("div[id*='_pagina_']")
+                                .filter(function () {
+                                    return this.id.match(new RegExp('mes_\\d+_pagina_\\d+$', 'ig'));
+                                })
+                                .filter(':visible')
+                                .fadeOut('slow', function () {
+                                    $("div[id$='_pagina_" + nroPagina + "']")
+                                            .filter(function () {
+                                                return this.id.match(new RegExp('mes_\\d+_pagina_' + nroPagina + '$', 'ig'));
+                                            })
+                                            .fadeIn('slow', function () {
+                                                $('html,body').animate({
+                                                    scrollTop: $('#seccion-listado-eventos').offset().top
+                                                }, 'slow');
+                                            });
+                                });
+                    });
+                }
+
+                function registrarAccionesListado() {
+                    //listado de eventos
+                    var currentPage = '70002';
+                    $("#btn-ver-mas").click(function (event) {
+                        event.preventDefault();
+
+                        var Shuffle = window.Shuffle;
+                        var element = document.getElementById('listado-eventos-filterizr');
+                        var shuffleInstance = new Shuffle(element, {
+                            itemSelector: '.event-item',
+
+                        });
+                        shuffleInstance.filter(currentPage);
+
+                        if ($("article[id^='event_']:filteredOut").length == 0) {
+                            $("#btn-ver-mas").hide();
+                        }
+                    });
+
+                    //aside fix bottom
+                    $(document).ready(function () {
+                        var w = $('.sidebar').width();
+                        $('.aside-position').css({
+                            width: w
+                        });
+
+                    });
+
+                    $(window).resize(function () {
+                        var screen = $(window).width();
+                        if (screen > 768) {
+                            var ca = $('#content').attr('canvas', 'container');
+                            ca.removeAttr('canvas');
+                        } else {
+                            $('#content').attr('canvas', 'container');
+                        }
+                    });
+                }
+
+                $('.cuerpo_slide .info--slider > a').each(function () {
+                    $(this).on('click', function () {
+                        if (typeof gaEventTracking !== 'undefined') {
+                            gaEventTracking.push('event, Homepage, Click, Carousel-EventoID:' + $(this).attr('data-eventID') + '-ClienteID:0');
+                        }
+                    });
+                });
+
+                $('ul.listado li > a').each(function () {
+                    $(this).on('click', function () {
+                        if (typeof gaEventTracking !== 'undefined') {
+                            gaEventTracking.push('event, Homepage, Click, CarouselListado-EventoID:' + $(this).attr('data-eventID') + '-ClienteID:0');
+                        }
+                    });
+                });
+
+                $(document).on('click', '#btn-ver-mas > a', function (e) {
+                    if (typeof gaEventTracking !== 'undefined') {
+                        gaEventTracking.push('event, Homepage, Click, BtnVerMas-ClienteID:0');
+                    }
+                });
+
+                //se carga js correspondiente en la primera carga de página
+                registrarAccionesListado();
+
+                var categorias = ["musica", "teatro", "familia", "deportes", "especiales", "todos"]
+                if (categorias.includes(window.location.pathname.replace("/", ""))) {
+                    setTimeout(() => {
+                        $("html,body").animate({
+                            scrollTop: $(".listado--eventos").offset().top - 50
+                        }, 'slow');
+                    }, 750)
+                }
+            });
+        </script>
+
+        <!-- SCRIPTS 2021 -->
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/bootstrap/4.6.0/js/popper.js"></script>
+        <script type="text/javascript" src="https://cdn.teleticket.com.pe/assets/shuffle/shuffle.min.js"></script>
+        <!-- SCRIPTS 2021 -->
+
+
+        <script type="text/javascript">
+        $(function () {
+            var searchElementsLoaded = false;
+            $("input[id='search']").click(function (event) {
+                if (!searchElementsLoaded) {
+                    $.ajax('/Landing/GetEventosBusqueda')
+                            .done(function (data) {
+                                registerSearchComponent(data);
+                                searchElementsLoaded = true;
+                            });
+                }
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+            $(function () {
+
+                function cargarInfoUserLogeado( { Nombres = '', Apellidos = '' }) {
+                    $('.nombre-cliente').html(Nombres + " " + Apellidos);
+                }
+
+                function cargarInfoUserLogeado( { Nombres = '', Apellidos = '' }) {
+                    $('.nombre-cliente').html(Nombres + " " + Apellidos);
+                }
+
+                var ptab = getCookie("_ptab");
+
+                if (typeof ptab !== 'undefined' && ptab === "1") {
+                    $(".menu-cuenta > .visita").hide();
+                    $(".menu-cuenta-mobile > .visita").hide();
+                    $(".menu-cuenta > .logeado").show();
+                    $(".menu-cuenta").show();
+                    cargarInfoUserLogeado(getLoginState());
+                } else {
+                    $(".menu-cuenta > .logeado").hide();
+                    $(".menu-cuenta-mobile > .logeado").hide();
+                    $(".menu-cuenta > .visita").show();
+                    $(".menu-cuenta-mobile > .visita").show();
+                    $(".menu-cuenta").show();
+                    try {
+                        removeLoginState();
+                    } catch (e) {
+                        //console.error(e);
+                    }
+                }
+                if (typeof gaEventTracking !== 'undefined') {
+                    gaEventTracking.init({
+                        inheritance: true
+                    });
+                }
+            });
+        </script>
+        <!-- GetChatScript -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=224dfbd2-da79-4541-bc1b-9905b20ebe73"></script><script type="text/JavaScript">window.zESettings = { webWidget: { color: { theme: "#AD201A" } } };</script>
+    </body>
+</html>
